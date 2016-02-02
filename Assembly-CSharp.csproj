@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{D39EC7DA-2B28-830C-335B-F6085A0B7D8F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_8;UNITY_4_6;UNITY_STANDALONE_OSX;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\DataController.cs" />
+     <Compile Include="Assets\DetailController.cs" />
+     <Compile Include="Assets\DetalItem.cs" />
+     <Compile Include="Assets\MainController.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\AnimationCurve_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\Bounds_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\Gradient_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\Keyframe_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\LayerMask_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\Unity\Rect_DirectConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsArrayConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsDateConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsDictionaryConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsEnumConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsForwardConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsGuidConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsIEnumerableConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsKeyValuePairConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsNullableConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsPrimitiveConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsReflectedConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsTypeConverter.cs" />
+     <Compile Include="Assets\Source\Converters\fsWeakReferenceConverter.cs" />
+     <Compile Include="Assets\Source\Internal\fsCyclicReferenceManager.cs" />
+     <Compile Include="Assets\Source\Internal\fsOption.cs" />
+     <Compile Include="Assets\Source\Internal\fsPortableReflection.cs" />
+     <Compile Include="Assets\Source\Internal\fsTypeExtensions.cs" />
+     <Compile Include="Assets\Source\Internal\fsVersionManager.cs" />
+     <Compile Include="Assets\Source\Internal\fsVersionedType.cs" />
+     <Compile Include="Assets\Source\Reflection\fsMetaProperty.cs" />
+     <Compile Include="Assets\Source\Reflection\fsMetaType.cs" />
+     <Compile Include="Assets\Source\Reflection\fsReflectionUtility.cs" />
+     <Compile Include="Assets\Source\Reflection\fsTypeLookup.cs" />
+     <Compile Include="Assets\Source\fsAotCompilationManager.cs" />
+     <Compile Include="Assets\Source\fsBaseConverter.cs" />
+     <Compile Include="Assets\Source\fsConfig.cs" />
+     <Compile Include="Assets\Source\fsContext.cs" />
+     <Compile Include="Assets\Source\fsConverter.cs" />
+     <Compile Include="Assets\Source\fsConverterRegistrar.cs" />
+     <Compile Include="Assets\Source\fsData.cs" />
+     <Compile Include="Assets\Source\fsDirectConverter.cs" />
+     <Compile Include="Assets\Source\fsExceptions.cs" />
+     <Compile Include="Assets\Source\fsISerializationCallbacks.cs" />
+     <Compile Include="Assets\Source\fsIgnoreAttribute.cs" />
+     <Compile Include="Assets\Source\fsJsonParser.cs" />
+     <Compile Include="Assets\Source\fsJsonPrinter.cs" />
+     <Compile Include="Assets\Source\fsMemberSerialization.cs" />
+     <Compile Include="Assets\Source\fsObjectAttribute.cs" />
+     <Compile Include="Assets\Source\fsObjectProcessor.cs" />
+     <Compile Include="Assets\Source\fsPropertyAttribute.cs" />
+     <Compile Include="Assets\Source\fsResult.cs" />
+     <Compile Include="Assets\Source\fsSerializer.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.8/Standalone/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="LitJson">
+ <HintPath>/Users/yangyong/Documents/WorkPlace/Json/JsonUnity/Assets/LitJson.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
